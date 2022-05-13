@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplas Mídias</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em seu celular ou tablet, ou diminua o tamanho da tela do navegador</p>
+    <picture><!--ATENÇÃO! a ultima imagem é a imagem padrão a ser carregada, acima dela ficará a menor-->
+        <source media="(max-width: 750px)" srcset="imagens/ft-p.png" type="image/png"><!--imagem pequena-->
+        <source media="(max-width: 1050px)" srcset="imagens/ft-m.png" type="image/png"><!--imagem media-->
+        <img src="imagens/ft-g.png" alt="imgFlex"><!--imagem grande-->
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>vamos aprender a reproduzir áudios em HTML</p>
+<!-- pode ser usado 
+    <audio src="midia/audio/Breeze - Telecasted.mp3" controls autoplay></audio> 
+-->
+    <!--ATENÇÃO! Alguns navegadores podem não ter compatibilidade com o formato do áudio-->
+
+    <!--outro modo de adicionar audio-->
+    <audio preload="metadata" controls loop> 
+        <!--
+            O parâmetro (preload) tem 3 opções
+            {
+                auto: o audio só vai carregar após o site inteiro ser carregado
+                metadata: ira carregar algumas informações (tamanho, duração, data de envio) e 
+                    só carregará o audio quando o usuario clicar no play
+                none: só carregará alguma coisa sobre o arquivo quando o usuario apertar o play
+            }
+            O parâmetro (controls) adiciona o controle de volume e o botão de play para que o usuario controle
+            O parâmetro (loop) faz com que o audio rode em um loop(não recomendado)
+        -->
+        <source src="midia/audio/Breeze - Telecasted.mp3" type="audio/mpeg">
+        <source src="midia/audio/Breeze - Telecasted.mp3" type="audio/ogg">
+        <source src="midia/audio/Breeze - Telecasted.mp3" type="audio/wav">
+        <!--Arquivos .wav são muito pesados, por isso não é recomendado para o uso em um site-->
+        <p>
+            Infelizmente, seu navegador não permite a reprodução desse tipo de arquivo <br>
+            <a href="midia/audio/Breeze - Telecasted.mp3">Clique Aqui</a> para baixar
+        </p>
+    </audio>
+    <h1>Hospedando videos</h1>
+    <h2>Hospedagem local</h2>
+    <video poster="tumb/gato noiado.jpg" controls width="400">
+        <source src="midia/video/meu-video-menor.m4v" type="video/m4v">
+        <source src="midia/video/meu-video.mp4" type="video/mp4">
+        <p>seu navegador não tem compatibilidade com o formado do arquivo</p>
+    </video>
+
+    <h1>Inserindo videos do youtube</h1>
+    <p>Com o video aberto, click em compartilhar e click na primeira opção(Incorporar) e click em copiar e cole no seu código.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/HeMEMkgnbng" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>

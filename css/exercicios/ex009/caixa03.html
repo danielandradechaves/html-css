@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordas Personalizadas</title>
+    <style>
+        h1{
+            border: 10px solid black;
+            padding: 5px;
+            border-image-source: url('borda.png');
+            border-image-slice: 22;
+            border-image-repeat: repeat;
+        }
+        #p1{
+            border: 7px solid black;
+            padding: 3px;
+            border-image-source: url('borda.png');
+            border-image-slice: 39;
+            border-image-repeat: repeat;
+        }
+        #p2{
+            border: 7px solid black;
+            padding: 3px;
+            border-image-source: url('borda.png');
+            border-image-slice: 22;
+            border-image-repeat: stretch;
+        }
+        #p3{
+            border: 7px solid black;
+            padding: 3px;
+            border-image: url('borda.png') 25 repeat;
+        }
+        #ul1{
+            border: 7px solid black;
+            padding: 3px;
+            border-image: url('borda.png') 25 repeat;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de borda</h1>
+    <p id="p1">
+        Personalizando as bordas da caixa com imagens!
+    </p>
+    <p id="p2">
+        Essa configuração de borda é feia pra caralho.
+    </p>
+    <p id="p3">
+        O short-hand do border-image, fica nessa ordem: <br>
+        source, slice, repeat.
+    </p>
+    <p>
+        <ul id="ul1">
+            <li>
+                source - a imagem que você quer usar
+            </li>
+            <li>
+                slice - o tamanho da imagem(não precisa de medida "px, em, ft...")
+            </li>
+            <li>
+                repeat - como a imagem vai se repetir.
+            </li>
+
+        </ul>
+    </p>
+</body>
+</html>

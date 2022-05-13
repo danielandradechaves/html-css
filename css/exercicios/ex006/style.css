@@ -1,0 +1,16 @@
+body{
+    font: normal 1em Arial, serif;
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: right;
+}
+h3{
+    text-align: left;
+}
+p{
+    text-align: justify;
+    text-indent: 1.5em;
+}

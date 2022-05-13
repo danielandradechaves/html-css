@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em css</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            /*
+            Medidas Absolutas:
+                cm(centímetro), mn(milímetro), in(polégada), px(pixel), pt(ponto), pc(paica)
+            Medidas Relativas:
+                em (relativo ao tamanho do 'M' maiúsculo da fonte),
+                ex (relativo a altura do 'x' minúsculo da fonte),
+                rem (relativo à fonte configurada no body),
+                vw 'viewport width' (relativo à largura do viewport 'tamanho da tela'),
+                vh 'viewport height' (relativo a altura do viewport),
+                % (porcentagem)
+
+            */
+            font-size: 1em;/*recomendado usar 'em' e 'px' no font-size*/
+        }
+
+        h1{
+            font: italic lighter 3em 'Work Sans', sans-serif;
+            /*shorthand*/
+            /* font: 'font-style' 'font-weight' 'font-size' 'font-family'; */
+        }
+        h2{
+            font: 2em 'Work Sans', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores quod incidunt molestias? Corporis, beatae voluptates reiciendis optio officia nostrum quae qui id obcaecati voluptatibus facilis? Animi consequatur quis dolores quae!
+        </p>
+
+        <h2>Subtítulo do exercicio</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, quisquam nemo minus adipisci nihil quibusdam. Eveniet qui quisquam maxime quidem sequi! Id architecto, non hic illo in quisquam ratione beatae!
+            </p>
+
+</body>
+</html>

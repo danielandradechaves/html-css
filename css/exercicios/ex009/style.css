@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+body{
+    background-color: dimgray;
+    margin: 0px;
+}
+
+header{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 0px 20px;
+    box-shadow: 4px 4px 9px 0px rgb(0 0 0 / 25%);
+}
+
+header > h1#titulo{
+    font-family: 'Courier New', Courier, monospace;
+    width: 154px;
+    margin: 21px auto;
+}
+
+nav{
+    background-color: rgb(122, 122, 122);
+    padding: 3px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.575);
+}
+
+nav > a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+main{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 0px 20px;
+    box-shadow: 4px 4px 9px 0px rgb(0 0 0 / 25%);
+}
+
+#assunto{
+    border-style: solid;
+    width: 120px;
+}
+
+#assunto > h2{
+    text-align: center;
+}
+
+ul{
+    width: 70px;
+    padding-left: 15px;
+    margin-left: 10px;
+}
+
+li{
+    text-decoration: underline;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 4px;
+    margin: 0px;
+}
+
+footer > p{
+    margin: 0px;
+}
+
+div#bola{
+    height: 100px;
+    width: 100px;
+    margin:  50px;
+    background-color: white;
+    border-radius: 50%;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1><em>Outros tipos de formatação</em></h1>
+    <h2>Código-fonte / Pré-formatação</h2>
+    <p>O comando <code>document.getElementById('teste')</code>, é escrito em linguagem JavaScript</p>
+    <p><mark>A tag CODE é usada para melhorar a leitura de códigos, deixando a fonte monoespaçada(pesquisa o que é isso que o Daniel do passado ficou com preguiça de explicar)</mark></p>
+    <h3>exemplo de um código em phyton</h3>
+        <pre>
+            <code>
+    num = int(input('Digite um número'))
+    if num % 2 == 0:
+        print(f'O número é PAR')
+    else:
+        print(f'O número é ÍMPAR')
+            </code>
+        </pre>
+    <h2>Citações simples</h2>
+    <p>tag Q é usada para citar frases de outras pessoas e coisa do gênero, isso da semântica para a frase</p>
+    <p>Ja dizia o grande filósofo sr. Madruga: <q>A vingança nunca é plena, mata a alma e a envenena</q></p>
+    <h2>Citações completas</h2>
+    <h3>exemplo</h3>
+    <p>Segundo Jeff Noble, em seu livro HTML para leigos:</p>
+    <!--O cite="" no blockquote, não vai aparecer para o usuario, mas o mecanismo de busca do google vai relacionar essa citação a tal link(mostrar para o google qual o dono da frase)-->
+    <blockquote cite="https://www.google.com.br/books/edition/HTML_XHTML_e_CSS_Para_Leigos/E8ZtDwAAQBAJ?hl=pt-BR&gbpv=1&dq=html+para+leigos&printsec=frontcover">
+        A difereça entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capítulo descrevem os blocos de texto.
+    </blockquote>
+    <h2>Abreviações</h2>
+    <p><abbr title="abreviação">abbr</abbr></p>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascating Style Sheets">CSS</abbr>. Estou adorando!</p>
+    <h2>Texto invertido</h2>
+    <p><abbr title="right to left">rtl</abbr> <br> <abbr title="left to right">ltr</abbr></p>
+    <p><bdo dir="rtl">uma tag idiota e sem sentido</bdo></p>
+</body>
+</html>

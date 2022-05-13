@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <p><abbr title="List Item">LI</abbr></p>
+    <p>ATENÇÃO! no HTML5, o &lt;/li&gt; ficou opcional, apesar de que o visual studio feche automaticamente a tag.</p>
+    <h2>Listas Ordenadas</h2>
+    <p>A ordem da lista faz diferença, <abbr title="Ordered List">OL</abbr>.</p>
+    <ol>
+        <li>Acordar</li>
+        <li>Ligar o computador</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Estudar HTML</li>
+    </ol>
+    <p>Quando se tem uma lista enumerada, como o exemplo acima, se for preciso acrescentar um item no meio dela, teria que reenumerar todos os outros itens para não ficar bagunçado. Então essas tags, fazem a enumeração de forma automatica</p>
+    <p>A tag <abbr title="Ordered List">OL</abbr> tem um parâmetro chamado (type=""), onde você pode escoher se a lista será numérica(1, 2, 3), em ordem alfabética com letras maiúsculas(A, B, C) ou minúsculas(a, b, c) e tambem em algarismos romanos com letras maiúsculas(I, II, III) ou minúsculas(i, ii, iii)</p>
+    <h2>Listas não Ordenadas</h2>
+    <p>A ordem da lista não faz diferença, <abbr title="Unordered List">UL</abbr>.</p>
+    <ul>
+        <li>catchup</li>
+        <li>mostarda</li>
+        <li>só</li>
+    </ul>
+    <p>A tag <abbr title="Unordered List">UL</abbr> também tem o parâmetro (type=""), com as opções: disc(um ponto preto), circle(um circulo não preenchido), squere(quadrado)</p>
+    <h2>Misturando listas ordenasdas e listas não ordenadas</h2>
+    <ul type="square">
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+            <li>Visual Basic</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a" start="5"> <!--vai começar no e-->
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ul>
+    <h2>Lista de Definição</h2>
+    <dl> <!--definicion list-->
+        <dt>HTML</dt><!--definicion term-->
+        <dd>Linguagem de marcação para a criação do conteúdo de um site</dd><!--definicion description-->
+
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site</dd>
+
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação e interatividade de um site</dd>
+    </dl>
+</body>
+</html>
